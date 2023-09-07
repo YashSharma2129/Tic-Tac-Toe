@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: black;
+  color: aqua;
+  height: 75px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.gamecontainer {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36JQobK9sCi-kMXi9PFbVYb2wtrLhWplN2A&usqp=CAU");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: rgb(135, 67, 135); */
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+  align-items: center;
+  height: 100vh;
+}
+.imgbox img {
+  width: 250px;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: "Roboto", sans-serif;
+}
+.box {
+  border: 3px solid black;
+  font-size: 7vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgb(104, 104, 210);
+}
+.gameinfo {
+  padding: 0 34px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+} /* Reset button style */
+#reset {
+  background-color: #ff5733; /* Change to your desired button background color */
+  color: white; /* Text color */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 20px; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+#reset:hover {
+  background-color: #e63900; /* Change to your desired hover color */
+}
